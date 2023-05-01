@@ -4,8 +4,8 @@ local Window = OrionLib:MakeWindow({Name = "PerstHub", HidePremium = false, Intr
 
 function MakeScriptHub()
     OrionLib:MakeNotification({
-	Name = "Suggestly turned on!",
-	Content = "Notification content... what will it say??",
+	Name = "Suggestly used!",
+	Content = "You Suggestly used it",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
