@@ -29,7 +29,7 @@ FarmTab:AddToggle({
 
 FarmTab:AddTextbox({
 	Name = "Put here how much player have pets in trade",
-	Default = "default box input",
+	Default = "0",
 	TextDisappear = true,
 	Callback = function(Value)
 		MakeScriptHub()
