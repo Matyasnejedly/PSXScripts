@@ -1,7 +1,18 @@
 if game.PlaceId == 6284583030 then 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "PerstHub", HidePremium = false, IntroText = "Loading", SaveConfig = true, ConfigFolder = "OrionTest"})
-    
+
+function MakeScriptHub()
+    OrionLib:MakeNotification({
+	Name = "Suggestly turned on!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
+
+
+
 local FarmTab = Window:MakeTab({
 	Name = "Trade Scam",
 	Icon = "rbxassetid://4483345998",
@@ -12,22 +23,20 @@ FarmTab:AddToggle({
 	Name = "Trade Scam",
 	Default = false,
 	Callback = function(Value)
-		print(Value)
+		MakeScriptHub()
 	end    
 })
 
-FarmTab:AddSlider({
-	Name = "How long you want to trade scam turn on",
-	Min = 0,
-	Max = 1000,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "bananas",
+FarmTab:AddTextbox({
+	Name = "Put here how much player have pets in trade",
+	Default = "default box input",
+	TextDisappear = true,
 	Callback = function(Value)
-		print(Value)
-	end    
+		MakeScriptHub()
+	end	  
 })
+
+
 
 
 
