@@ -16,7 +16,18 @@ FarmTab:AddToggle({
 	end    
 })
 
-
+FarmTab:AddSlider({
+	Name = "How long you want to trade scam turn on",
+	Min = 0,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
 
 
 
